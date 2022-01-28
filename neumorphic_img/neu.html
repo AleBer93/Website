@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>Neuromorphism</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+		<style>
+			:root {--ON: initial; --OFF: ;}
+			.module {--dark: var(--OFF); background: var(--dark, black); color: var(--dark, white);}
+			.dark {--dark: var(--ON); font-size: min(25px, 20px);}
+			* {margin:0; padding:0; box-sizing: border-box; --bg: rgba(224,229,236, 1); --bg-dark: #292D32; --box-shadow-concavo: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+				--box-shadow-incavo: 4px 4px 6px 0 rgba(255,255,255,.5), -4px -4px 6px 0 rgba(116, 125, 136, .2), inset -4px -4px 6px 0 rgba(255,255,255,.5), inset 4px 4px 6px 0 rgba(116, 125, 136, .3);}
+			::selection {background: var(--bg); color: blue;}
+			body {margin:5vh 3vw; font-size: 20px; background: #d8e1ea;}
+			header {position: sticky; top: 0px; display:flex; flex-direction: row; justify-content: space-between;}
+			ul {list-style: none;}
+			ul > li:first-child  {position:relative; top: 20px;}
+			ul > li:nth-child(2) {position:relative; top: 15px;}
+			ul > li:nth-child(3)  {position:relative; top: 10px;}
+			ul > li:last-child  {position:relative; top: 5px;}
+			li {display:inline-block; padding: 10px 35px; margin: 0 5px; box-shadow: var(--box-shadow-concavo);}
+			li:hover {transform: scale(0.98);}
+			li:active {box-shadow: var(--box-shadow-incavo);}
+			.hamburger-menu {width: 40px; height: 5px; background: grey; border-radius: 10px; margin: 20px;}
+			.hamburger-menu::before {content: ''; position: absolute; width: 40px; height: 5px; background: grey; border-radius: 10px; transform: translateY(-16px);}
+			.hamburger-menu::after {content: ''; position: absolute; width: 40px; height: 5px; background: grey; border-radius: 10px; transform: translateY(+16px);}
+			.hamburger-menu {display: none;}
+			main {height: 100vh;}
+			.card {height: 40vh; width: 60vw; background: linear-gradient(to right bottom , rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)); border-radius: 10px; background-filter: blur(2px); margin-left: 20px;}
+			#tabella {border: black solid 0.5rem;}
+			#tabella th {border: black solid 0.2rem;}
+			body span {color: #d8e1ea;
+					font-size: 6rem;
+					text-shadow: -4px -4px 6px #eceff6,
+								-7px -7px 10px #dfe6ee,
+								4px 4px 4px #9fafb9,
+								6px 6px 8px #b2beca,
+								8px 8px 16px #cbd6e0;
+					position: relative; top: 50%;
+					text-decoration: none;}
+			body span:active {text-decoration: none;}	
+			body span:active {text-decoration: none;}		
+			body span:visited {text-decoration: none;}
+			body .tondo {display: inline-block; width: 30px; height: 30px; border-radius: 50px;
+						background: linear-gradient(145deg, #e7f1fa, #c2cbd3);
+						box-shadow: 5px 5px 10px #b1b9c0, -5px -5px 10px #ffffff;
+						margin-left: 5vw; margin-bottom: 1rem; margin-right: 4vw;}
+			
+			@media screen and (max-width: 960px) {
+				body {margin: 0; background: var(--bg);}
+			}
+			
+			@media screen and (max-width: 670px) {
+				nav ul li {display: none;}
+				hamburger-menu {display: block; margin-right: 10px; color: red;}
+			}
+		</style>
+	</head>
+	<body>
+		<a href="buttons.html">
+			<span class="tondo"></span><span>B</span><span>&amp;</span><span>S</span>
+		</a>
+	</body>
+</html>

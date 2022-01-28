@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="it-IT"> <!--Usa dati strutturati. Esempio su google.it. Si tratta di una pagina web ben definita non di un oggetto a caso https://schema.org/WebPage forse è da mettere nel body-->
+<html lang="it">
     <head>
-        <meta charset="utf-8">
         <title>Benchmark and Style</title>
+        <meta charset="utf-8">
         <meta name="description" content="Breve descrizione di B&S"> <!--Aggiungere una breve descrizione di B&S-->
         <meta name="keywords" content="Analisi di portafoglio, Risk management, Portafogli modello, Pricing derivati"> <!--Aggiornare la lista di parole chiave-->
         <meta name="author" content="Alessio Bernardi"> <!--Usare dati strutturati-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon"> <!--Aggiornare l'icona rappresentativa della società apposta affianco al dominio-->
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap">
     </head>
     <body>
-        <div id="container">
-            <header> <!--Conviene bloccarlo in cima alla pagina?-->
-                <div id="logo">
-                    <h1>BENCHMARK &amp; STYLE</h1>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <span></span>
+                    <a href="index.html" title="pagina principale"><h1>B&S</h1></a>
                 </div>
+                <input type="checkbox" id="hamburger-check"></input>
+                <svg class="hamburger" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                    <path d="M0 3.5h15m-15 8h15m-15-4h15" stroke="currentColor"></path>
+                </svg>
                 <nav>
                     <ul class="nav-links">
                         <li>
@@ -32,17 +34,17 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" title="lavori passati">
+                            <a href="portfolio.html" title="lavori passati">
                                 PORTFOLIO
                             </a>
                         </li>
                         <li>
-                            <a href="" title="servizi offerti">
+                            <a href="services.html" title="servizi offerti">
                                 SERVICES
                             </a>
                         </li>
                         <li>
-                            <a href="" title="contatti">
+                            <a href="contact.html" title="contatti">
                                 CONTACT
                             </a>
                         </li>
@@ -50,53 +52,127 @@
                 </nav>
             </header>
             <main>
-                <img src="img/The_Wolf_of_Wall_Street.png" alt="stares-mutherfuckerly">
-                <section id="catchy-line">
-                    <h2>
-                        Every 60 seconds a minute passes
-                    </h2>
-                    <!-- <h2>Fine, i'll do it myself.</h2>
-                    <p><i>(How you livin', Biggie Smalls?)</i> In mansion and Benzes
-                        Givin' ends to my friends, and it feels stupendous
-                    </p> -->
-                    <!-- <p>
-                        Tecnologie usate per i servizi: Bloomberg, Quantalys, Python, PostgreSQL, Git
-                    </p> -->
-                </main>
-                </section>
-            <div id="partners">
-                <h2>I NOSTRI PARTNER <del>(loghi rubati dalle relative pagine internet)</del></h2>
-                <div id="logo-partners">
-                    <img src="img/logo-azimut.png" alt="gruppo_azimut">
-                    <img src="img/logo-bppb.png" alt="logo-bppb">
-                    <img src="img/logo-bpl.png" alt="logo-bpl">
-                    <img src="img/logo-crv.png" alt="logo-crv">
+                <div class="index-div">
+                    <section class="main-content">
+                        <div class="catchy-line">
+                            <h2>BENCHMARK AND STYLE</h2><br>
+                            <p>Al servizio della consulenza finanziaria</p>
+                        </div>
+                        <p>servizi</p>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <!-- <nav class="main-content-navbar">
+                            <ul class="main-content-sidelinks">
+                                <li>
+                                    <svg viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                                        <path d="M0 15.5h15M1.5 4.5l6-3 6 3M0 6.5h15M5.5 9v4m4-4v4m-8-6.5v9m12-9v9" stroke="currentColor"></path>
+                                    </svg>
+                                    <a href="services.html" title="servizi offerti">
+                                        servizi
+                                    </a>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                                        <path d="M5.5 3v-.5a2 2 0 114 0V3m-9 3.5c3.706 4.235 10.294 4.235 14 0m-13-3h12a1 1 0 011 1v9a1 1 0 01-1 1h-12a1 1 0 01-1-1v-9a1 1 0 011-1z" stroke="currentColor"></path>
+                                    </svg>
+                                    <a href="portfolio.html" title="servizi passati">
+                                        esperienze passate
+                                    </a>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.5a7.5 7.5 0 1115 0v1a2.499 2.499 0 01-4.727 1.136A3.5 3.5 0 1111 7.5v1a1.5 1.5 0 003 0v-1a6.5 6.5 0 10-2.786 5.335l.572.82A7.5 7.5 0 010 7.5zm10 0a2.5 2.5 0 10-5 0 2.5 2.5 0 005 0z" fill="currentColor"></path>
+                                    </svg>
+                                    <a href="contact.html" title="contatti">
+                                        contatti
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="fotoceramiche">
+                            <img src="img/mega.jpg" alt="prof. Carluccio" id="carluccio" class="fotoceramica">
+                            <img src="img/mega.jpg" alt="prof. Cucurachi" id="cucurachi" class="fotoceramica">
+                            <img src="img/mega.jpg" alt="prof. Pomante" id="pomante" class="fotoceramica">
+                            <img src="img/mega.jpg" alt="prof. Maspero" id="maspero" class="fotoceramica">
+                        </div> -->
+                    </section>
+                    <hr>
+                    <section class="aree-di-interesse">
+                        <div>
+                            <h2>Aree di interesse</h2>
+                            <br>
+                            <p>Costruiamo progetti per ogni ambito della consulenza finanziaria</p>
+                        </div>
+                        <ul class="aree-di-interesse-lista">
+                            <li>Analisi portafoglio</li>
+                            <li>ESG</li>
+                            <li>Litigation</li>
+                            <li>Risk management</li>
+                            <li>Questionari di rischio</li>
+                            <li>Ranking cataloghi fondi</li>
+                            <li>Portafogli modello</li>
+                            <li>Report mensili</li>
+                            <li>Pricing derivati</li>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section class="partners">
+                        <div>
+                            <div>
+                                <h2>We work with the best partners</h2>
+                                <br>
+                                <p>Lavoriamo dal 1900 affianco dei grandi protagonisti dei mercati finanziari</p>
+                                <!-- Inserisci un bottone con label read more che rimanda alla pagina about, sezione storia della società -->
+                            </div>
+                            <div class="partners-logo">
+                                <img src="img/logo-azimut.png" alt="logo-azimut">
+                                <img src="img/logo-bppb.png" alt="logo-bppb">
+                                <img src="img/logo-bpl.png" alt="logo-bpl">
+                                <img src="img/logo-crv.png" alt="logo-crv">
+                            </div>
+                        </div>
+                        <div class="partners-pareri">
+                            <h3>What our partners think</h3>
+                            <blockquote>
+                                <q>Absolutely nothing</q>
+                                <br><br>
+                                <cite>Mega direttore galattico della Mega ditta</cite>
+                            </blockquote>
+                        </div>
+                    </section>
                 </div>
-            </div>
+            </main>
             <footer>
-                <section>
-                    <h5>BENCHMARK AND STYLE SRL</h5>
-                    <br>
-                    <p>Via San Siro, 33 MI</p>
-                    <br>
-                    <p>Partita IVA: xxx-xxx-xxxx</p>
-                    <br>
-                    <p>Tel: 045-xxx-xxxx</p>
-                    <br>
-                    <p>PEC: xxxx@benchmarkandstyle.com</p>
+                <section class="dati-azienda"> <!--Itemprop firm-->
+                    <address>
+                        <h4>BENCHMARK AND STYLE SRL</h4>
+                        <p>Via San Siro, 33</p>
+                        <p>20121 Milano</p>
+                        <p>Tel: 02-5832-8666</p>
+                        <p>PEC: <a href="mailto:info@benchmarkandstyle.com?subject=Mail dal nostro sito">info@benchmarkandstyle.com</a></p>
+                        <p>P.IVA: xxx-xxx-xxxx</p>
+                    </address>
                 </section>
-                <section>
-                    <h5>Note legali</h5>
-                    <br>
-                    <p>Privacy policy</p>
-                    <br>
-                    <p>Cookie policy</p>
+                <span></span>
+                <section class="note-legali">
+                    <h4>Note legali</h4>
+                    <details>
+                        <summary>Privacy policy</summary>
+                        <br>
+                        <p>Non viene raccolto alcun dato<br> personale all'interno del sito</p>
+                    </details>
+                    <details>
+                        <summary>Cookie policy</summary>
+                        <br>
+                        <p>Non viene memorizzata alcuna<br> informazione sul dispositivo<br> dell'utente</p>
+                        <br>
+                        <p>Non viene fatto uso di alcuno<br> strumento di tracciamento</p>
+                    </details>
                 </section>
-                <section class="linguaggi">
-                    <h5>Powered by</h5>
-                    <br>
-                    <img src="img/html_css.png" alt="HTML-CSS">
-                </section>
+                <span></span>
+                <aside class="linguaggi">
+                    <h4>Powered by</h4>
+                    <img src="img/html_css_2.png" alt="linguaggi-usati">
+                </aside>
             </footer>
         </div>
     </body>

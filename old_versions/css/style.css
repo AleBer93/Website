@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: "Lato", "Lucida Grande", sans-serif;
+    /* background: linear-gradient(120deg , #414B56, #00A2E1); */
+    /* background-image: linear-gradient(to right, #040404, #000000, #656565); */
+    /* background-image: linear-gradient(135deg, #8b939a, #000000, #5b6467); */
+    /* background-image: linear-gradient(135deg, #000000, #2d3436); */
+    background-image: linear-gradient(135deg, #0071bf, #000000);
+    /* background-repeat: no-repeat; */
+    /* background-color: #1f1f1f; */
+    margin: 1vh 10vw;
+    /* margin: 1vh auto; */
+    /* max-width: 80vw; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vh;
+}
+
+header {
+    /* width: max(80vw); */
+    /* width: 80vw; */
+    width: 100%;
+    /* background-image: linear-gradient(90deg, #000000, #2d3436); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0.7rem;
+    /* z-index: 1; per sovrapporre le sotto-schede al contenuto sottostante*/
+}
+
+.logo {
+    font-family: "Montserrat", "Lucida Grande", sans-serif;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 0.5px 8px white;
+    user-select: none;
+    animation-name: lampadina;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lampadina {
+    from {
+        color: white;
+    }
+
+    39% {
+        color: white;
+    }
+
+    40% {
+        color: #fcffa4;
+    }
+
+    40.1% {
+        color: white;
+    }
+
+    41% {
+        color: #fcffa4;
+    }
+
+    41.1% {
+        color: white;
+    }
+
+    44% {
+        color: #fcffa4;
+    }
+
+    44.1% {
+        color: white;
+    }
+}
+
+@keyframes lampadina-scarica {
+    from {
+        color: white;
+    }
+
+    20% {
+        color: white;
+    }
+
+    25% {
+        color: rgb(105, 99, 99);
+    }
+
+    27% {
+        color: white;
+    }
+
+    29% {
+        color: rgb(105, 99, 99);
+    }
+
+    30% {
+        color: white;
+    }
+}
+
+.logo:hover{
+    cursor: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: inset -3px -3px 7px rgba(31, 60, 110, 0.884), inset 2px 0.4px 5px #8b89fcd8;
+    border-color:rgba(45, 79, 138, 0.692);
+    border-style: outset;
+    border-radius: 8px;
+    /* column-gap: 1rem; */
+}
+
+.nav-links li {
+    padding: 0.8rem 1rem;
+}
+
+.nav-links li:hover {
+    background-color: #39575765;
+    transition-property: background;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #87adcf;
+    font-size: 1.1rem;
+}
+
+.nav-links li a:active {
+    text-decoration: underline;
+}
+
+main {
+    /* grid-area: main; */
+    /* width: 100%; */
+    /* max-width: 100%; */
+    /* background-image: url("../img/The_Wolf_of_Wall_Street.png");
+    background-repeat: no-repeat;
+    background-size: 90% auto;
+    background-position: center; */
+    /* position: relative; */
+}
+
+/* main img {
+    width: max(80vw); */
+    /* height: auto; */
+    /* position: relative;
+} */
+
+.catchy-line {
+    height: 50vh;
+    text-align: center;
+    /* background-color: #141E30; */
+    /* background-image: linear-gradient(to right, #24243e, #141E30, #0f0c29); */
+    /* box-shadow: inset -3px -3px 7px #9ba5fcb0, inset 3px 3px 5px rgba(31, 60, 110, 0.692); */
+    box-shadow: inset -3px -3px 7px #9ba5fcb0, inset 3.5px 3.5px 5px rgba(3, 8, 17, 0.692); /* rgba(20, 44, 85, 0.692);*/
+    border-color:rgba(48, 70, 107, 0.692);
+    border-style: inset;
+    border-top-left-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content 1fr;
+}
+
+.catchy-line h2 {
+    /* width: minmax(10vw, 50vw); */
+    /* width: max(100%); */
+    /* grid-row-start: 1;
+    grid-row-end: 2; */
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.1rem, -0.1200rem + 6.1000vw, 7.2rem); /*1920x1080*/
+    /* font-size: clamp(1.2rem, 0.2rem + 5vw, 8.2rem); */
+    letter-spacing: -0.1em;
+    /* color: #04619f; */
+    color: #0e0e49;
+    text-shadow: -0.001em -0.001em 1px rgba(255,255,255,.15), 10px 10px 10px rgba(0,0,0,.5), 20px 20px 20px rgba(0,0,0,.4), 30px 30px 30px rgba(0,0,0,.1);
+}
+
+.catchy-line p {
+    /* font-size: 2rem; */
+    font-family: "Great Vibes", cursive;
+    color: #d2a813;
+}
+
+#partners {
+    background-color: #262626cc;
+    /* width: max(80vw); */
+}
+
+#partners h2 {
+    text-align: center;
+}
+
+#partners #logo-partners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#partners #logo-partners img {
+    width: max(20vw);
+    padding: 25px;
+}
+
+/* About */
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-container .card {
+    flex-basis: 25%;
+    /* width: 19vw; */
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    opacity: 0.5;
+}
+
+.cards-container .card img {
+    width: 80%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cards-container .card ul {
+    display: inline-block;
+}
+
+.cards-container .card ul a {
+    margin: 0 10px;
+}
+
+.cards-container .card ul a img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.cards-container .card:hover {
+    opacity: 1;
+}
+
+/* Carluccio */
+
+.test-1 img {
+    float: left;
+    width: 600px;
+}
+
+.test-1 p {
+    margin-right: 280px;
+    float: right;
+}
+
+.test-2 {
+    clear: both;
+}
+
+.test-2 p {
+    float: left;
+}
+
+.test-2 img {
+    float: right;
+    height: 397px;
+    width: 680px;
+}
+
+/* Services */
+
+.services-container h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.servizi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 1vw;
+}
+
+.servizi .servizio {
+    flex-basis: 20%;
+    height: 30vh;
+    background-color: rgba(113, 111, 145, 1);
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    padding: 3vh 0;
+    background-color: #262626cc;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 4vh;
+}
+
+.linguaggi h4 {
+    text-align: center;
+}
+
+.linguaggi img {
+    width: max(11vw);
+}
