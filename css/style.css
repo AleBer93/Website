@@ -1,13 +1,9 @@
 :root {
-    /* #d8e1ea */
     --r: 216;
     --g: 225;
     --b: 234;
-
-    /* --r: 234;
-    --g: 238;
-    --b: 239; */
-    /* other different bg colors #dedede; #eef0f5 #F0F0F3 #e6e7ee*/
+    /* #d8e1ea */
+    /* other different bg colors #eaeeef #dedede; #eef0f5 #F0F0F3 #e6e7ee*/
     --bg-color: rgb(var(--r), var(--g), var(--b));
     --text-color: #444445;
     --text-color-2: #686a72;
@@ -16,25 +12,42 @@
     /* Shadows for white background colors and 0.15px of intensity (dark-shyadow:#b7baba)*/
     --box-shadow-light-color: rgb(max(calc(var(--r) + 34), 255), max(calc(var(--g) + 34), 255), max(calc(var(--b) + 34), 255));
     --box-shadow-dark-color: rgb(calc(var(--r) - 34), calc(var(--g) - 34), calc(var(--b) - 34));
-    --box-shadow-flat: 5px 5px 30px var(--box-shadow-dark-color),
-                       3px 3px 9px var(--box-shadow-dark-color),
-                      -5px -5px 30px var(--box-shadow-light-color),
-                      -3px -3px 8px var(--box-shadow-light-color);
-    --box-shadow-hover: 8px 8px 10px var(--box-shadow-dark-color),
-                       -4px -4px 20px var(--box-shadow-light-color);
-    --box-shadow-pressed-elevated: inset 5px 5px 15px var(--box-shadow-dark-color),
-                                4px 4px 15px var(--box-shadow-dark-color),
-                          inset -5px -5px 15px var(--box-shadow-light-color),
-                                -4px -4px 10px var(--box-shadow-light-color);
+    --r-dark: 182;
+    --g-dark: 191;
+    --b-dark: 200;
+    --r-light: 235;
+    --g-light: 245;
+    --b-light: 255;
+    --box-shadow-flat: inset -1px -1px 1px rgba(var(--r-dark), var(--g-dark), var(--b-dark), 0.5),
+                        2px 2px 2px rgba(var(--r-dark), var(--g-dark), var(--b-dark), 0.9),
+                        4px 4px 6px rgba(var(--r-dark), var(--g-dark), var(--b-dark), 0.9),
+                        8px 8px 16px rgba(var(--r-dark), var(--g-dark), var(--b-dark), 0.9),
+                        inset 1px 1px 1px rgba(var(--r-light), var(--g-light), var(--b-light), 0.5),
+                        -2px -2px 2px rgba(var(--r-light), var(--g-light), var(--b-light), 0.9),
+                        -4px -4px 6px rgba(var(--r-light), var(--g-light), var(--b-light), 0.9),
+                        -8px -8px 16px rgba(var(--r-light), var(--g-light), var(--b-light), 0.9);
+    /* --box-shadow-flat: inset -1px -1px 1px var(--box-shadow-dark-color),
+                        5px 5px 30px var(--box-shadow-dark-color),
+                        3px 3px 9px var(--box-shadow-dark-color),
+                        inset 1px 1px 1px rgba(235, 245, 255, 0.5),
+                        -5px -5px 30px var(--box-shadow-light-color),
+                        -3px -3px 8px var(--box-shadow-light-color); */
+    --box-shadow-hover: inset -1px -1px 1px rgba(var(--r-dark), var(--g-dark), var(--b-dark), 0.5),
+                        2px 2px 2px rgba(var(--r-dark), var(--g-dark), var(--b-dark), 0.5),
+                        4px 4px 6px rgba(var(--r-dark), var(--g-dark), var(--b-dark), 0.5),
+                        8px 8px 16px rgba(var(--r-dark), var(--g-dark), var(--b-dark), 0.5),
+                        inset 1px 1px 1px rgba(var(--r-light), var(--g-light), var(--b-light), 0.5),
+                        -2px -2px 2px rgba(var(--r-light), var(--g-light), var(--b-light), 0.5),
+                        -4px -4px 6px rgba(var(--r-light), var(--g-light), var(--b-light), 0.5),
+                        -8px -8px 16px rgba(var(--r-light), var(--g-light), var(--b-light), 0.5);
+    --box-shadow-pressed-elevated: 1px 1px 1px rgba(var(--r-light), var(--g-light), var(--b-light), 0.5),
+                                    inset -2px -2px 3px rgba(var(--r-light), var(--g-light), var(--b-light), 0.5),
+                                    inset -6px -6px 6px rgba(var(--r-light), var(--g-light), var(--b-light), 0.5),
+                                    -1px -1px 1px rgba(var(--r-dark), var(--g-dark), var(--b-dark), 0.5),
+                                    inset -2px -2px 3px rgba(var(--r-dark), var(--g-dark), var(--b-dark), 0.5),
+                                    inset -6px -6px 6px rgba(var(--r-dark), var(--g-dark), var(--b-dark), 0.5);
     --box-shadow-pressed: inset 5px 5px 10px var(--box-shadow-dark-color),
-                                      inset -5px -5px 10px var(--box-shadow-light-color);
-    /*rgb(234, 238, 239) - rgb(199, 202, 203) - rgb(255, 255, 255) (35/36/36)*/
-    /*rgb(224, 224, 224) - rgb(190, 190, 190) - rgb(255, 255, 255) (34/34/34)*/
-    /*rgb(222, 222, 222) - rgb(189, 189, 189) - rgb(255, 255, 255) (33/33/33)*/
-    /*rgb(230, 231, 238) - rgb(196, 196, 202) - rgb(255, 255, 255) (34/35/36)*/
-    /*rgb(230, 231, 238) - rgb(184, 185, 190) - rgb(255, 255, 255) (46/46/48)*/
-    /*rgb(34, 195, 75) - rgb(29, 166, 64) - rgb(39, 224, 86) (5/29/11)-(-5/-29/-11)*/
-    /*rgb(219,219,219) - rgb(186, 186, 186) - rgb(252, 252, 252) (33/33/33)-(33/33/33) */
+                          inset -5px -5px 10px var(--box-shadow-light-color);
 }
 
 * {
@@ -53,6 +66,23 @@ body {
 ::selection {
     background: rgba(255, 255, 255, 0);
 }
+
+/* link telefonici attivi solo per i telefonini quindi i dispositivi
+    sotto i 480px */
+.tel-on {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .tel-off {
+        display: none;
+    }
+    
+    .tel-on {
+        display: block;
+    }
+}
+
 
 .container {
     display: flex;
@@ -75,29 +105,6 @@ header {
     flex-direction: row;
     align-items: center;
     column-gap: 1rem;
-    /* color: var(--company-color);
-    letter-spacing: -0.1em;
-    font-size: 1.2rem;
-    font-size: clamp(0.55rem, 0.4200rem + 0.6500vw, 1.2rem);
-    text-shadow: 1px 0.2px 1px #0053a0b2,
-                1px 0.4px 1px #0053a0b2,
-                1px 0.6px 1px #0053a0b2,
-                1px 0.8px 1px #0053a0b2,
-                1px 1px 1px #0053a0b2,
-                1px 1.2px 1px #0053a0b2,
-                1px 1.4px 1px #0053a0b2,
-                1px 1.6px 1px #0053a0b2,
-                1px 1.8px 1px #0053a0b2,
-                1px 2px 1px #0053a0b2,
-                1px 2.2px 1px #0053a0b2,
-                1px 2.4px 1px #0053a0b2,
-                1px 2.6px 1px #0053a0b2,
-                1px 2.8px 1px #0053a0b2,
-                1px 3px 1px #0053a0b2,
-                1px 10px 6px rgba(16,16,16,0.4),
-                1px 14px 10px rgba(16,16,16,0.2),
-                1px 17px 35px rgba(16,16,16,0.2),
-                1px 22px 60px rgba(16,16,16,0.4); */
 }
 
 .logo span {
@@ -149,7 +156,7 @@ header {
 
 .nav-links li {
     box-shadow: var(--box-shadow-flat);
-    border: rgba(0, 0, 0, 0.03) solid 0.05rem;
+    /* border: rgba(0, 0, 0, 0.03) solid 0.05rem; */
     border-radius: 0.5rem;
     user-select: none;
 }
@@ -170,7 +177,7 @@ header {
     display: inline-block;
     text-decoration: none;
     color: inherit;
-    /* font-size: 1.1rem; */
+    font-size: 1.1rem;
     font-size: clamp(0.55rem, 0.4400rem + 0.5500vw, 1.1rem);
     padding: 0.5rem 0.9rem;
 }
@@ -422,7 +429,7 @@ header {
         flex-direction: column;
         row-gap: 2rem;
     }
-
+    
     .index-div .partners > div h2, p {
         text-align: center;
     }
@@ -505,10 +512,10 @@ header {
     row-gap: 2rem;
     justify-content: space-evenly;
 }
-    /* flex-basis: 25%;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    opacity: 0.5; */
+/* flex-basis: 25%;
+background: rgba(255, 255, 255, 0.05);
+border-radius: 15px;
+opacity: 0.5; */
 
 .team .team-cards .team-card {
     box-shadow: var(--box-shadow-flat);
@@ -615,8 +622,144 @@ header {
     text-align: center;
 }
 
+
 /* Contacts */
 
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+}
+
+.contacts h2 {
+    text-decoration: underline;
+    align-self: center;
+    font-size: 2.5rem;
+}
+
+.contacts .contacts-mails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2rem;
+}
+
+.contacts .contacts-mails > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts .contacts-mails > div svg {
+    border: rgba(0, 0, 0, 0.03) solid 0.05rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: clamp(2.2rem, 1.9400rem + 1.3000vw, 3.5rem);
+    height: clamp(2.2rem, 1.9400rem + 1.3000vw, 3.5rem);
+}
+
+.contacts .contacts-mails a {
+    text-decoration: none;
+    color: inherit;
+    font-size: clamp(1rem, 0.8000rem + 1.0000vw, 2rem);
+    padding: 0.5rem 1rem;
+    box-shadow: var(--box-shadow-pressed);
+    background-color: #e3edf7;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contacts .contacts-badges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 7rem;
+    row-gap: 3rem;
+}
+
+.contacts .contacts-badges .contact-badge-visit-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.contacts .contacts-badges .contact-badge-visit-us .icon-map-pin {
+    border-radius: 50%;
+    border: 1rem solid var(--bg-color);
+    box-shadow: 2px 2px 2px rgba(182, 191, 200, 0.9),
+    4px 4px 6px rgba(182, 191, 200, 0.9),
+    8px 8px 16px rgba(182, 191, 200, 0.9),
+    -2px -2px 2px rgba(235, 245, 255, 0.9),
+    -4px -4px 6px rgba(235, 245, 255, 0.9),
+    -8px -8px 16px rgba(235, 245, 255, 0.9);
+}
+
+.contacts .contacts-badges svg {
+    width: 7rem;
+    height: 7rem;
+}
+
+.contacts .contacts-badges .contact-badge-call {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.contacts .contacts-badges .contact-badge-call .icon-phone-call {
+    border-radius: 50%;
+    border: 1rem solid var(--bg-color);
+    box-shadow: 2px 2px 2px rgba(182, 191, 200, 0.9),
+    4px 4px 6px rgba(182, 191, 200, 0.9),
+    8px 8px 16px rgba(182, 191, 200, 0.9),
+    -2px -2px 2px rgba(235, 245, 255, 0.9),
+    -4px -4px 6px rgba(235, 245, 255, 0.9),
+    -8px -8px 16px rgba(235, 245, 255, 0.9);
+}
+
+.contacts .contacts-badges .contact-badge-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.contacts .contacts-badges .contact-badge-email a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contacts .contacts-badges .contact-badge-email .icon-info-circle {
+    border-radius: 50%;
+    border: 1rem solid var(--bg-color);
+    box-shadow: 2px 2px 2px rgba(182, 191, 200, 0.9),
+    4px 4px 6px rgba(182, 191, 200, 0.9),
+    8px 8px 16px rgba(182, 191, 200, 0.9),
+    -2px -2px 2px rgba(235, 245, 255, 0.9),
+    -4px -4px 6px rgba(235, 245, 255, 0.9),
+    -8px -8px 16px rgba(235, 245, 255, 0.9);
+}
+
+.contacts .mappa-milano {
+    aspect-ratio: 1 / 0.75;
+    width: clamp(18.75rem, 15.0000rem + 18.7500vw, 37.5rem);
+}
+
+@media screen and (max-width: 480px) {
+    .contacts .contacts-mails a {
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+    }
+}
 
 /* Footer */
 

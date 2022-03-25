@@ -15,10 +15,18 @@
     </head>
     <body>
         <div class="container">
-            <header> <!--Conviene bloccarlo in cima alla pagina?-->
-                <div id="logo">
-                    <h1>BENCHMARK &amp; STYLE</h1>
+            <header>
+                <div class="logo">
+                    <span></span>
+                    <a href="index.html" title="pagina principale"><h1>B&S</h1></a>
                 </div>
+                <input type="checkbox" id="hamburger-check"></input>
+                <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                  </svg>
                 <nav>
                     <ul class="nav-links">
                         <li>
@@ -116,27 +124,36 @@
             </main>
             <footer>
                 <section class="dati-azienda"> <!--Itemprop firm-->
-                    <h5>BENCHMARK AND STYLE SRL</h5>
-                    <br>
-                    <p>Via San Siro, 33 MI</p>
-                    <br>
-                    <p>Partita IVA: xxx-xxx-xxxx</p>
-                    <br>
-                    <p>Tel: 045-xxx-xxxx</p>
-                    <br>
-                    <p>PEC: xxxx@benchmarkandstyle.com</p>
+                    <address>
+                        <h4>BENCHMARK AND STYLE SRL</h4>
+                        <p>Via San Siro, 33</p>
+                        <p>20149 Milano</p>
+                        <p class="tel-off">Tel: 02-5832-8666</p>
+                        <p class="tel-on" >Tel: <a href="tel:+390258328666">02-5832-8666</a></p>
+                        <p>PEC: <a href="mailto:info@benchmarkandstyle.com?subject=Mail dal nostro sito&body=Spett.le B&S,">info@benchmarkandstyle.com</a></p>
+                        <p>P.IVA: xxx-xxx-xxxx</p>
+                    </address>
                 </section>
+                <span></span>
                 <section class="note-legali">
-                    <h5>Note legali</h5>
-                    <br>
-                    <p>Privacy policy</p>
-                    <br>
-                    <p>Cookie policy</p>
+                    <h4>Note legali</h4>
+                    <details>
+                        <summary>Privacy policy</summary>
+                        <br>
+                        <p>Non viene raccolto alcun dato<br> personale all'interno del sito</p>
+                    </details>
+                    <details>
+                        <summary>Cookie policy</summary>
+                        <br>
+                        <p>Non viene memorizzata alcuna<br> informazione sul dispositivo<br> dell'utente</p>
+                        <br>
+                        <p>Non viene fatto uso di alcuno<br> strumento di tracciamento</p>
+                    </details>
                 </section>
+                <span></span>
                 <aside class="linguaggi">
-                    <h5>Powered by</h5>
-                    <br>
-                    <img src="img/html_css.png" alt="linguaggi-usati">
+                    <h4>Powered by</h4>
+                    <img src="img/html_css_2.png" alt="linguaggi-usati">
                 </aside>
             </footer>
         </div>
