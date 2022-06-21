@@ -18,12 +18,28 @@
                     <a href="index.html" title="pagina principale"><h1>B&S</h1></a>
                 </div>
                 <input type="checkbox" id="hamburger-check"></input>
-                <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <div class="hamburger_menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- <div class="bento_menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div> -->
+                <!-- <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <line x1="4" y1="6" x2="20" y2="6" />
                     <line x1="4" y1="12" x2="20" y2="12" />
                     <line x1="4" y1="18" x2="20" y2="18" />
-                  </svg>
+                </svg> -->
                 <nav>
                     <ul class="nav-links">
                         <li>
@@ -31,8 +47,8 @@
                                 HOME
                             </a>
                         </li>
-                        <li>
-                            <a href="about.html" title="chi siamo" class="active">
+                        <li pressed>
+                            <a href="about.html" title="chi siamo" active>
                                 ABOUT
                             </a>
                         </li>
@@ -62,15 +78,61 @@
                             <a href="soci/carluccio.html" alt="pagina-carluccio">
                                 <img src="soci/img/carluccio.jpg" alt="carluccio">
                             </a>
-                            <h3><b>Emanuele Carluccio</b></h3>
-                            <h4>Presidente</h4>
+                            <h3>Emanuele Carluccio</h3>
+                            <details>
+                                <summary>Cariche attuali</summary>
+                                <br>
+                                <ul>
+                                    <li><p>Presidente di B&S</p></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                        </svg>
+                                        <span>Professore ordinario di Economia degli intermediari finanziari presso l'Università di Verona</span>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                        </svg>
+                                        <span>Docente Senior della SDA Bocconi School of Management</span>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                        <span>Consigliere indipendente di Eurizon Capital SGR - Gruppo Intesa San Paolo</span>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                        <span>Chairman di EFPA Europe (European Financial Planning Association)</span>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                        <span>Consigliere indipendente di Eurizon Capital Real Asset SGR - Gruppo Intesa San Paolo</span>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                        <span>Presidente del comitato investimenti di Copernico SIM</span>
+                                    </li>
+                                </ul>
+                            </details>
                             <div class="team-card-buttons">
-                                <a>Resume</a>
-                                <a>Contact</a>
+                                <a href="soci/carluccio.html" alt="pagina-carluccio">Resume</a>
+                                <a href="contact.html">Contact</a>
                             </div>
                             <div class=team-card-links>
                                 <a href="https://it.linkedin.com/in/emanuele-maria-carluccio-1767a49" title="linkedin" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0e76a8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0e76a8" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                         <rect x="4" y="4" width="16" height="16" rx="2" />
                                         <line x1="8" y1="11" x2="8" y2="16" />
@@ -79,11 +141,11 @@
                                         <path d="M16 16v-3a2 2 0 0 0 -4 0" />
                                     </svg>
                                 </a>
-                                <a href="https://www.dea.univr.it/?ent=persona&id=3432&lang=it" title="univr" width="50" height="50" target="_blank">
+                                <a href="https://www.dea.univr.it/?ent=persona&id=3432&lang=it" title="univr" target="_blank">
                                     <img src="img/logo-univr.png" alt="univr">
                                 </a>
                                 <a href="soci/curriculum_carluccio.pdf" title="curriculum" alt="curriculum" download>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 120 120" style="enable-background:new 0 0 128 128" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" style="enable-background:new 0 0 128 128" xml:space="preserve">
                                         <path style="fill:#b8d8d3" d="M97.8 40v65.3H30.3V22.6h50.1z"/>
                                         <path style="fill:#318fb5" d="M97.8 40H80.4V22.6z"/>
                                         <path d="M64 49.9c5.5 0 10 4.5 10 10v2.9H54v-2.9c0-5.5 4.5-10 10-10z" style="fill:#2086a5"/>
@@ -94,26 +156,97 @@
                             </div>
                         </div>
                         <div class="team-card">
-                            <a href="soci/cucurachi.html" alt="pagina-cucurachi">
-                                <img src="img/mega.jpg" alt="cucurachi">
+                            <a href="soci/pomante.html" alt="pagina-pomante">
+                                <img src="soci/img/pomante.jpg" alt="pomante">
                             </a>
-                            <h3><b>Paolo Cucurachi</b></h3>
-                            <h4>Partner</h4>
+                            <h3>Ugo Pomante</h3>
+                            <details>
+                                <summary>Cariche attuali</summary>
+                                <br>
+                                <ul>
+                                    <li><p>Partner di B&S</p></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                        </svg>
+                                        <span>Professore Ordinario di Economia degli Intermediari Finanziari presso l’Università di Roma Tor Vergata</span>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                        <span>Membro del Comitato Scientifico dell’Albo Consulenti Finanziari (OCF)</span>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                        <span>Membro dell’Advisory Board di fondi di investimento mobiliari e immobiliari</span>
+                                    </li>
+                                </ul>
+                            </details>
+                            <div class="team-card-buttons">
+                                <a href="soci/pomante.html" alt="pagina-pomante">Resume</a>
+                                <a href="contact.html">Contact</a>
+                            </div>
                         </div>
                         <div class="team-card">
-                            <a href="soci/pomante.html" alt="pagina-pomante">
-                                <img src="img/mega.jpg" alt="pomante">
+                            <a href="soci/cucurachi.html" alt="pagina-cucurachi">
+                                <img src="soci/img/cucurachi.png" alt="cucurachi">
                             </a>
-                            <h3><b>Ugo Pomante</b></h3>
-                            <h4>Partner</h4>
+                            <h3>Paolo Cucurachi</h3>
+                            <details>
+                                <summary>Cariche attuali</summary>
+                                <br>
+                                <ul>
+                                    <li><p>Partner di B&S</p></li>
+                                </ul>
+                            </details>
+                            <div class="team-card-buttons">
+                                <a href="soci/cucurachi.html" alt="pagina-cucurachi">Resume</a>
+                                <a href="contact.html">Contact</a>
+                            </div>
                         </div>
                         <div class="team-card">
                             <a href="soci/maspero.html" alt="pagina-maspero">
-                                <img src="img/mega.jpg" alt="maspero">
+                                <img src="soci/img/maspero.png" alt="maspero">
                             </a>
-                            <h3><b>Davide Maspero</b></h3>
-                            <h4>Partner</h4>
+                            <h3>Davide Maspero</h3>
+                            <details>
+                                <summary>Cariche attuali</summary>
+                                <br>
+                                <ul>
+                                    <li><p>Partner di B&S</p></li>
+                                </ul>
+                            </details>
+                            <div class="team-card-buttons">
+                                <a href="soci/maspero.html" alt="pagina-maspero">Resume</a>
+                                <a href="contact.html">Contact</a>
+                            </div>
                         </div>
+                    </div>
+                </section>
+                <br>
+                <section class="timeline">
+                    <h2>STORIA</h2>
+                    <div class="timeline-grid">
+                        <details>
+                            <summary>The miracle of birth</summary>
+                            <p>L'azienda è stata fondata in qualche anno da qualcuno</p>
+                        </details>
+                        <span></span>
+                        <span></span>
+                        <details>
+                            <summary>Growth</summary>
+                            <p>Thanks to Alessio</p>
+                        </details>
+                        <details>
+                            <summary>Death</summary>
+                            <p>Everything comes to an end</p>
+                        </details>
+                        <span></span>
                     </div>
                 </section>
             </main>
@@ -123,8 +256,10 @@
                         <h4>BENCHMARK AND STYLE SRL</h4>
                         <p>Via San Siro, 33</p>
                         <p>20149 Milano</p>
-                        <p class="tel-off">Tel: 02-5832-8666</p>
-                        <p class="tel-on" >Tel: <a href="tel:+390258328666">02-5832-8666</a></p>
+                        <p>Tel: 
+                            <a href="tel:+390258328666" id="tel">02-5832-8666</a>
+                            <span>02-5832-8666</span>
+                        </p>
                         <p>PEC: <a href="mailto:info@benchmarkandstyle.com?subject=Mail dal nostro sito&body=Spett.le B&S,">info@benchmarkandstyle.com</a></p>
                         <p>P.IVA: xxx-xxx-xxxx</p>
                     </address>

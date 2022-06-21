@@ -1,0 +1,15 @@
+Mia proposta
+Creazione portafogli modello con l'asset allocation strategica. Nel suo documento word inviatomi tempo fa ci sono delle immagini interessanti.
+Selezione prodotti con cui riempire i portafogli modello creati al punto precedente attraverso un processo di ranking del catalogo.
+Correzione di breve termine con l'asset allocation tattica
+I consulenti finanziari dell'intermediario ora sono pronti ad aggredire nuovi clienti per portare nuove masse all'interno della struttura finanziaria  Servizio SAP da presentare nell'incontro con il potenziale cliente
+Al termine degli incontri tra il consulente ed il cliente, quest'ultimo deve rispondere ad un questionario somministratogli dal consulente per conoscere il suo grado di rischio ed ottenere la proposta di portafoglio in prodotti più adatta. (quindi servizio di creazione del questionario)
+Il consulente propone il portafoglio in prodotti deciso dalla banca, che corrisponde al grado di rischio del cliente. Diversamente, il consulente può avvalersi di uno strumento di ottimizzazione di prodotti per proporre un portafoglio personalizzato, Quantalys.
+
+Controproposta di Pomante
+Servizio SAP di valutazione del portafoglio della clientela prospect
+Sviluppo del sistema di adeguatezza, profilazione della clientela e creazione del Questionario.  
+Creazione delle asset allocation strategiche per profili di rischio e classi di investitori (Private, Affluent, Retail). 
+Sviluppo dell'asset allocation tattica (dalla definizione dei limiti, alla ottimizzazione sino alla definizione delle view tattiche).
+Selezione dei prodotti in coerenza con le scelte di asset allocation e sulla base di un processo di ranking del catalogo o ottimizzazioni personalizzate.
+Sviluppo di modelli personalizzati di monitoraggio periodico e scomposizione della performance.
