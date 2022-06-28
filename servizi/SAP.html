@@ -7,15 +7,15 @@
         <meta name="keywords" content="Analisi di portafoglio, Risk management, Portafogli modello, Pricing derivati"> <!--Aggiornare la lista di parole chiave-->
         <meta name="author" content="Alessio Bernardi"> <!--Usare dati strutturati-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
     </head>
     <body>
         <div class="container">
             <header>
                 <div class="logo">
                     <span></span>
-                    <a href="index.html" title="pagina principale"><h1>B&S</h1></a>
+                    <a href="../index.html" title="pagina principale"><h1>B&S</h1></a>
                 </div>
                 <input type="checkbox" id="hamburger-check"></input>
                 <div class="hamburger_menu">
@@ -23,47 +23,30 @@
                     <div></div>
                     <div></div>
                 </div>
-                <!-- <div class="bento_menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div> -->
-                <!-- <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="4" y1="6" x2="20" y2="6" />
-                    <line x1="4" y1="12" x2="20" y2="12" />
-                    <line x1="4" y1="18" x2="20" y2="18" />
-                </svg> -->
                 <nav>
                     <ul class="nav-links">
                         <li>
-                            <a href="index.html" title="pagina principale">
+                            <a href="../index.html" title="pagina principale">
                                 HOME
                             </a>
                         </li>
                         <li>
-                            <a href="about.html" title="chi siamo">
+                            <a href="../about.html" title="chi siamo">
                                 ABOUT
                             </a>
                         </li>
                         <li>
-                            <a href="portfolio.html" title="lavori passati">
+                            <a href="../portfolio.html" title="lavori passati">
                                 PORTFOLIO
                             </a>
                         </li>
                         <li pressed>
-                            <a href="services.html" title="servizi offerti" active>
+                            <a href="../services.html" title="servizi offerti" active>
                                 SERVICES
                             </a>
                         </li>
                         <li>
-                            <a href="contact.html" title="contatti">
+                            <a href="../contact.html" title="contatti">
                                 CONTACT
                             </a>
                         </li>
@@ -71,7 +54,141 @@
                 </nav>
             </header>
             <main>
-
+                <div class="SAP">
+                    <section>
+                        <h1>ANALISI DI PORTAFOGLIO</h1>
+                        <p>
+                            Il servizio di analisi di portafoglio svolge un'analisi critica del 
+                            portafoglio della clientela prospect con l'obbiettivo di ottenere un
+                            mandato di consulenza da parte del cliente oppure di aumentare le masse 
+                            gestite del suo portafoglio aggregato.
+                        </p>
+                        <p>
+                            L'analisi viene condotta sugli estratti conto delle diverse posizioni 
+                            nelle quali ha investito il cliente, utilizzando come software il 
+                            pacchetto office e python, e come fonte di dati Bloomberg e Morningstar 
+                            Direct.
+                        </p>
+                        <p>
+                            L'output restituisce due documenti in cui è presente
+                            un'analisi dettagliata delle criticità sia a livello di singolo 
+                            strumento, ???sia a livello complessivo di portafoglio in termini 
+                            di asset allocation complessiva misurata come scostamento rispetto 
+                            alla composizione di alcuni portafogli modello predefiniti???, sia in 
+                            termini di esposizione a specifici fattori di rischio, mediante un 
+                            accurato modello di risk management proprietario.
+                        </p>
+                    </section>
+                    <section>
+                        <h2>1.Portafoglio globale</h2>
+                        <p>
+                            Nella prima sezione il servizio SAP unisce tutte le posizioni presso
+                            le quali il cliente possiede il suo patrimonio, per creare il 
+                            portafolio globale del cliente.
+                        </p>
+                        <p>
+                            Il portafoglio globale rappresenta una novità per il cliente che è 
+                            abituato a vedere solo i rendiconti delle singole posizioni in cui ha 
+                            investito il suo capitale.
+                        </p>
+                        <figure>
+                            <figcaption>PORTAFOGLIO GLOBALE</figcaption>
+                            <img src="img/portafoglio_globale.png" alt="portafoglio globale">
+                            <img src="img/portafoglio_globale2.png" alt="portafoglio globale">
+                        </figure>
+                        <p>
+                            Il cliente potrà prendere consapevolezza di eventuali concentrazioni 
+                            eccessive in strumenti presenti in più intermediari, o concentrazioni 
+                            in interi mercati. La composizione del portafoglio in strumenti e tutti
+                            i warning vengono sintetizzati in un commento a seguito.
+                        </p>
+                    </section>
+                    <section>
+                        <h2>2.Scomposizione portafoglio</h2>
+                        <span></span>
+                        <p>
+                            Nella seconda sezione il portafoglio globale viene scomposto in strumenti,
+                            in asset class e in valute.
+                        </p>
+                        <figure>
+                            <figcaption>STRUMENTI</figcaption>
+                            <img src="img/strumenti.png" alt="strumenti">
+                        </figure>
+                        <p>
+                            La mappatura puntuale dei prodotti permette di creare il portafoglio in 
+                            micro asset class.<br>I prodotti del comparto amministrato come i bond
+                            vengono ricondotti alla micro categoria di appartenenza in base alla
+                            nazione dell'emittente, al tipo di emittente e al suo rating;
+                            le azioni in base alla nazione in cui è presente la sede legale della società;
+                            i certificati in base alla relazione tra emittente e sottostante.<br>
+                            I prodotti del comparto gestito vengono mappati usando la composizione
+                            più recente fornita da Bloomberg.<br>Per le polizze e le gestioni si procede
+                            alla mappatura dei loro sottostanti, in alternativa viene concordato un
+                            benchmark con il consulente.
+                        </p>
+                        <figure>
+                            <figcaption>MICRO</figcaption>
+                            <img src="img/micro.png" alt="micro">
+                        </figure>
+                        <p>
+                            La somma delle micro asset class formano la tabella delle macro asset class.
+                        </p>
+                        <figure>
+                            <figcaption>MACRO</figcaption>
+                            <img src="img/macro.png" alt="macro">
+                        </figure>
+                        <p>
+                            La composizione in valute viene ricavata attraverso una scomposizione
+                            ibrida. I prodotti del comparto amministrato contribuiscono alla composizione
+                            complessiva con la valuta nella quale sono stati emessi, mentre i prodotti
+                            del comparto gestito, dopo aver assegnato a ciascuna micro categoria una
+                            valuta, contribuiscono alla valuta che rappresenta la micro in quota parte
+                            così come emerso dalla loro mappatura.
+                        </p>
+                        <figure>
+                            <figcaption>VALUTE</figcaption>
+                            <img src="img/valute.png" alt="valute">
+                        </figure>
+                    </section>
+                    <section>
+                        <h2>3.Analisi strumenti</h2>
+                        <p>
+                            Nella terza sezione viene fatto un focus su obbligazioni, azioni e fondi
+                            presenti in portafoglio in cui vengono mostrate delle informazioni
+                            aggiuntive che permettono di valutare l'andamento dei singoli prodotti
+                            dalla data di acquisto e la profittabilità del loro mantenimento in
+                            portafoglio. Per i fondi viene anche mostrata anche la mappatura in
+                            micro asset class secondo la scomposizione suggerita da Bloomberg.
+                        </p>
+                    </section>
+                    <section>
+                        <h2>4.Analisi del rischio</h2>
+                        <p>
+                            Nella quarta sezione viene mostrato al cliente il rischio complessivo
+                            del portafoglio con analisi approfondite.
+                        </p>
+                    </section>
+                    <section>
+                        <h2>5.Analisi dei prodotti inefficienti</h2>
+                        <p>
+                            Nella quinta sezione, consegnata in un documento a parte, vengono
+                            analizzati in maniera critica gli strumenti inefficienti nel portafoglio.
+                        </p>
+                        <p>
+                            Verrà valutata la cedola e la liquidità degli strumenti obbligazionari,
+                            l'andamento dei prezzi di azioni e fondi, confrontati con il relativo
+                            benchmark. Verrà fornito il dettaglio delle polizze per avere
+                            accortezza di tutti i loro costi, e dei certificati per permetterne una
+                            migliore comprensione.
+                        </p>
+                        <p>
+                            Questa analisi rimarrà nelle mani del consulente, che potrà usare
+                            questi contenuti come argomento di discussione con il cliente, per
+                            fargli comprendere le criticità di portafoglio e quindi valutare
+                            la convenienza di cambiare intermediario.
+                        </p>
+                    </section>
+                </div>
             </main>
             <footer>
                 <section class="dati-azienda"> <!--Itemprop firm-->
@@ -106,7 +223,7 @@
                 <span></span>
                 <aside class="linguaggi">
                     <h4>Powered by</h4>
-                    <img src="img/html_css_2.png" alt="linguaggi-usati">
+                    <img src="../img/html_css_2.png" alt="linguaggi-usati">
                 </aside>
             </footer>
         </div>
